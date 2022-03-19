@@ -9,11 +9,10 @@ import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import com.erselankhan.compose.ui.screen.MapScreenWithCustomMarker
 import com.erselankhan.compose.ui.theme.ComposeTheme
 
 class MainActivity : ComponentActivity() {
-
-    private val context: Context = this
 
     @OptIn(ExperimentalMaterialApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    MapScreenWithCustomMarker()
                 }
             }
         }
