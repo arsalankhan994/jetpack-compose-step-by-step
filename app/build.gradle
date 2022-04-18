@@ -68,6 +68,10 @@ dependencies {
     /*
     Navigation Component
     */
-    def nav_version = "2.4.1"
+    def nav_version = "2.4.2"
     implementation("androidx.navigation:navigation-compose:$nav_version")
+
+
+    // Runtime Permission
+    implementation "com.google.accompanist:accompanist-permissions:0.24.3-alpha"
 }
