@@ -8,7 +8,10 @@ import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import com.erselankhan.compose.ui.screen.HelloContentWithoutStateHoisting
 import com.erselankhan.compose.ui.screen.RuntimePermissionScreen
+import com.erselankhan.compose.ui.screen.WithStateHoistingMethodExample
+import com.erselankhan.compose.ui.screen.WithoutStateHoistingMethodExample
 import com.erselankhan.compose.ui.theme.ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    RuntimePermissionScreen()
+                    WithoutStateHoistingMethodExample()
                 }
             }
         }
